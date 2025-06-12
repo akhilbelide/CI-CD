@@ -8,7 +8,7 @@ app = FastAPI(
 
 @app.get("/", tags = ["basic"])
 async def read_root():
-    return {"message": "Hello, World!"}
+    return {"message": "Hello, Wold!"}
 
 @app.get("/greet/{name}", tags = ["greet"])
 async def greet_user(name: str):
